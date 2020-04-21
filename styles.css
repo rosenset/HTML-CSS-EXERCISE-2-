@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+h1{ 
+    font-family: 'Seaweed Script', cursive;
+}
+
+.p1{
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.p3{
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.p5{
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.p2{
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+/* Media Queries*/
+
+@media (min-width: 800px) {
+    .h1 {
+        display: flex;
+    }
+
+.flex-container{
+    display: flex;
+    align-items:wrap;
+    flex-wrap: wrap-reverse;
+}
