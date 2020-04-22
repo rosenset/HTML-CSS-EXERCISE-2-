@@ -1,36 +1,98 @@
-* {
-	box-sizing: border-box;
+* { margin:0, padding 0;}
+
+body{
+    display: flex;
+    max-width: auto;
+    background-color: #CCC;
+    height: fit-content;
+    justify-content: center;
+}
+
+main{
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    height: fit-content;
+}
+
+
+.image1 img{
+    float: right;
+    margin-right: 5px;
+    height: 250px;
+    width: 250px;
+
+}
+
+figure.image1 {
+    float: right;
+    text-align: center;
+    width: 30%;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: large;
+    margin: 0;
+    padding: 50px;
+    padding-top:10px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    color: #333;
+    border: 10px solid #ddd;
+    box-shadow: 0 2px 4px 0 #999, 0 3px 10px 0 #999;
+    
+}
+
+
+.image2 img{
+    float: left;
+    margin-left: 7px;
+    height: 250px;
+    width: 250px;
+}
+
+figure.image2 {
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: large;
+    margin: 0;
+    padding: 50px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    color: #333;
+    border: 10px solid #ddd;
+    box-shadow: 0 2px 4px 0 #999, 0 3px 10px 0 #999;
 }
 
 h1{ 
     font-family: 'Seaweed Script', cursive;
 }
 
-.p1{
-    font-family: 'Nanum Brush Script', cursive;
-}
-
-.p3{
-    font-family: 'Nanum Brush Script', cursive;
-}
-
-.p5{
-    font-family: 'Nanum Brush Script', cursive;
-}
-
-.p2{
-    font-family: 'Nanum Brush Script', cursive;
-}
-
-/* Media Queries*/
-
-@media (min-width: 800px) {
-    .h1 {
-        display: flex;
-    }
-
-.flex-container{
+.parent-container{
+    margin: 10px;
+    position: relative;
     display: flex;
-    align-items:wrap;
-    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    flex-direction: row;            
+    flex-wrap: wrap; 
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+
+.parent-container-2{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;            
+    flex-wrap: wrap;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.parent-container-3{
+    margin: 10px;
+    justify-content: space-between;            
+    flex-wrap: wrap;
+    font-family: 'Nanum Brush Script', cursive;
 }
